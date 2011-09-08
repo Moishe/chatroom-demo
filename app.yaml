@@ -5,9 +5,10 @@ api_version: 1
 
 handlers:
 - url: /.*
-  script: xmpptest.py
+  script: main.py
 
 inbound_services:
 - xmpp_message
 - xmpp_subscribe
 - xmpp_presence
+- channel_presence
