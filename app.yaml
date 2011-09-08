@@ -1,0 +1,13 @@
+application: moishe-test-hr
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /.*
+  script: xmpptest.py
+
+inbound_services:
+- xmpp_message
+- xmpp_subscribe
+- xmpp_presence
